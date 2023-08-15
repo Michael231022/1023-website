@@ -9,7 +9,7 @@
         <style media="all">
             .mobile-display{display:none}
             .desktop-display{display:block}
-            @media (max-width:1000px){
+            @media (max-width:900px) and (max-height:1000px){
                 .desktop-display {display:none}
                 .mobile-display {display:block}
             }
@@ -57,19 +57,27 @@
             <footer>v.1.0.3 beta</footer>
         </div>
 
+        <!--MOBILE PHONE DISPLAY-->
+
         <div class="mobile-display">
             <div id="mobile-form">
                 <form action="1023 Program.html">
                     <h1>Login</h1>
+                    <hr style="margin-top:10px; height:2px;border-width:0;background-color:black">
                     <div class="mobile-form-input-section">
-                        <p class="mobile-form-username">Username: <input type="text" id="mobile-username" size="20" maxlength="30"  placeholder="Username" name="username_mobile" required="required" autocomplete="off"/>
-                        </p>
-                        <p class="mobile-form-password">Password: &nbsp;<input type="password" id="mobile-password" size="20" maxlength="30" placeholder="Password" name="password_mobile" required="required"/>
-                        </p>
+                        <br>
+                        <input type="text" id="mobile-username" maxlength="30"  placeholder="Username" name="username_mobile" required="required" autocomplete="off"/>
+
+                        <br>
+                        <input type="password" id="mobile-password" maxlength="30" placeholder="Password" name="password_mobile" required="required"/>
                     </div>
-                    <button type="button" onclick="getform2()" class="login_button">Login</button>
+                    <button type="button" onclick="getform2()" class="mobile-login_button">Login</button>
+                    <br>
+                    <p class="mobile-contact-p"><a class="mobile-contact-a" href="mailto:leeziyong0918@gmail.com" method="post" enctype="text/plain" name="comments">Contact Us</a></p>
                 </form>
             </div>
+
+            <p class="mobile-allrightreserved">&copy;2023 MIC_ALL RIGHT RESERVED</p>
         </div>
 
         <script>
@@ -196,6 +204,7 @@
                 document.querySelector(".popup").style.display = "none";
             });
 
+            /* DESKTOp */
 
             document.getElementById("username").addEventListener("keydown", function(){
                 if(event.key === "Enter") {
@@ -209,13 +218,15 @@
                 }
             });
 
-            document.getElementById("username_mobile").addEventListener("keydown", function(){
+            /* MOBILE PHONE */
+
+            document.getElementById("mobile-username").addEventListener("keydown", function(){
                 if(event.key === "Enter") {
                     getform2();
                 }
             });
 
-            document.getElementById("password_mobile").addEventListener("keydown", function(){
+            document.getElementById("mobile-password").addEventListener("keydown", function(){
                 if(event.key === "Enter") {
                     getform2();
                 }
