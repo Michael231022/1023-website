@@ -238,16 +238,85 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
-    height: 600px;
+    width: 100%;
+    height: fit-content;
     background-color: white;
-    border: 5px solid rgb(75, 63, 63);
     border-radius: 10px;
+    text-align: center;
 }
 
 #mobile-form h1 {
     font-size: 70px;
     text-align: center;
+}
+
+#mobile-form input {
+    font-family: monospace;
+    font-size: 23px;
+    font-weight: bold;
+    border: 0px;
+    border-bottom: 2px solid black;
+    background-color: rgb(236, 224, 224);
+    width: 250px;
+    height: 50px;
+    padding: 5px;
+}
+
+.mobile-form-input-section {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+#mobile-password {
+    margin-top: 30px;
+}
+
+.mobile-login_button {
+    margin: 40px auto;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-family: monospace;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgb(255, 223, 230);
+}
+
+.mobile-login_button:hover {
+    background-color: rgb(255, 157, 173);
+    border: 2px solid black;
+    border-radius: 3px;
+    transform: scale(1.04);
+}
+
+.mobile-contact-p {
+    text-align: right;
+    margin-bottom: 10px;
+    margin-right: 12px;
+}
+
+.mobile-contact-a {
+    font-size: 17px;
+}
+
+.mobile-contact-a:visited {
+    color: blue;
+}
+
+.mobile-footer {
+    position: fixed;
+    right: 5px;
+    bottom: 0px;
+    color: grey;
+}
+
+.mobile-allrightreserved {
+    position: fixed;
+    left: 5px;
+    bottom: 0px;
+    color: rgb(48, 46, 46); 
 }
 
 
