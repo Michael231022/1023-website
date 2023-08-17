@@ -16,7 +16,7 @@
         </style>
     </head>
 
-    <body bgcolor="lightblue">
+    <body bgcolor="lightblue" onload="stopback()">
         <div class="desktop-display">
             <div>
                 <div class="wave"></div>
@@ -80,7 +80,7 @@
             <p class="mobile-allrightreserved">&copy;2023 MIC_ALL RIGHT RESERVED</p>
         </div>
 
-        <script>
+        <script type="text/javascript">
             /* ======================================================================
             Login System
             ====================================================================== */
@@ -231,6 +231,10 @@
                     getform2();
                 }
             });
+
+            function stopback() {
+                window.history.go(1);
+            }
             
 
 
