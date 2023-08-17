@@ -273,6 +273,8 @@ footer {
 }
 
 .mobile-login_button {
+    text-decoration: none;
+    color: black;
     margin: 40px auto;
     width: 150px;
     height: 40px;
@@ -285,6 +287,8 @@ footer {
 }
 
 .mobile-login_button:hover {
+    text-decoration: none;
+    color: black;
     background-color: rgb(255, 157, 173);
     border: 2px solid black;
     border-radius: 3px;
