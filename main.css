@@ -1,0 +1,409 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #E7D7C9;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-img {
+    width: 100%;
+    height: 400px;
+}
+
+.nav-img-left {
+    width: 60%;
+    height: 400px;
+    float: left;
+}
+
+.nav-img-right {
+    width: 39%;
+    height: 400px;
+    float: right;
+}
+
+.nav-bar {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.nav-bar-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    overflow: scroll;
+    background-color: #daafa1;
+    border-radius: 2px;
+}
+
+.nav-bar-section::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-bar-section .closenav {
+    position: absolute;
+    top: 7px;
+    right: 2px;
+    width: 50px;
+    transition: transform 0.1s;
+    cursor: pointer;
+}
+
+.nav-bar-section .closenav:hover {
+    transform: scale(1.10);
+}
+
+.nav-bar-ul li {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 27px;
+    color: rgb(114, 112, 112);
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    background-color: #D4B2A7;
+    cursor: pointer;
+}
+
+.nav-bar-ul li:hover {
+    background-color: rgb(228, 153, 153);
+    color: black;
+    transition: all 0.3s linear;
+    text-transform: capitalize;
+    padding-left: 13px;
+}
+
+.nav-bar-profile {
+    width: 100%;
+    height: 170px;
+    background-color: white;
+}
+
+.nav-bar-button img {
+    position: fixed;
+    width: 50px;
+    top: 6px;
+    left: 13px;
+    cursor: pointer;
+    transition: transform .2s;
+    z-index: 1;
+}
+
+.nav-bar-button img:hover {
+    transform: scale(1.10);
+}
+
+.logoutwindow {
+    font-family: monospace;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 200px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.logoutwindow-section {
+    text-align: center;
+    font-size: 35px;
+}
+
+.logoutwindow-section button {
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+}
+
+#logout-yes:hover {
+    background-color: rgb(15, 238, 15);
+    border: 1px solid black;
+    border-radius: 2px;
+
+}
+
+#logout-no:hover {
+    background-color: rgb(243, 32, 32);
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+
+footer {
+    position: fixed;
+    margin-left: 4px;
+    left: 4px;
+    bottom: 0px;
+    color: rgb(90, 85, 85);
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    float:left;
+    width: 70%;
+    position: relative;
+}
+  
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.countdate {
+    position: relative;
+    float: right;
+    width: 30%;
+    height: 350px;
+    overflow: auto;
+    background-color: #44301e;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.countdate::-webkit-scrollbar {
+    display: none;
+}
+
+.countup {
+    position: relative;
+    width: 100%;
+    margin-top: 23%;
+    margin-bottom: 23%;
+}
+
+.countup p {
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+.countup .timeel {
+    background-color: white;
+    border-radius: 10px 0 0 10px;
+    padding: 5px;
+    color: rgb(29, 23, 16);
+    font-size: 40px;
+}
+
+.countup span[class*="timeRef"] {
+    background-color: #ffd4a3;
+    border-radius: 0 10px 10px 0;
+    padding: 5px;
+    margin-left: 0;
+    color: rgb(66, 46, 24);
+}
+
+.little-duck {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    animation: ducky 60s infinite;
+}
+
+@keyframes ducky {
+    from {
+        left:0%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+.header {
+    position: relative;
+    height: 350px;
+}
+
+.main-content {
+    position:relative;
+    width: 100%;
+    height: fit-content;
+}
+
+/**LEFT SIDE**/
+
+.left-content {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    width: 28%;
+    height: 500px;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.left-header {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    background-color: brown;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top:  20px;
+    padding-bottom:  20px;
+}
+
+.left-content-ul li {
+    width: 100%;
+    height: 60px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    text-align: center;
+    list-style: none;
+    overflow: hidden;
+}
+
+.left-content-ul li:hover {
+    background-color: #ebeaea;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.left-content-a-1 {
+    text-decoration: none;
+    font-size: 20px;
+    color: purple;
+    font-family:'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.left-content-a-2 {
+    text-decoration: none;
+    font-size: 20px;
+    color: red;
+    font-family:'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.left-content-a-3 {
+    text-decoration: none;
+    font-size: 20px;
+    color: green;
+    font-family:'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.left-content-a-4 {
+    text-decoration: none;
+    font-size: 20px;
+    color: blue;
+    font-family:'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+/**RIGHT SIDE**/
+
+.right-content {
+    position: absolute;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    width: 63%;
+    height: 500px;
+    background-color: white;
+    border-top-right-radius: 20px;
+}
+

@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**Nav-Bar**/
+.nav-bar {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.nav-bar-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    overflow: scroll;
+    background-color: #daafa1;
+    border-radius: 2px;
+}
+
+.nav-bar-section::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-bar-section .closenav {
+    position: absolute;
+    top: 7px;
+    right: 2px;
+    width: 50px;
+    transition: transform 0.1s;
+    cursor: pointer;
+}
+
+.nav-bar-section .closenav:hover {
+    transform: scale(1.10);
+}
+
+.nav-bar-ul li {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 27px;
+    color: rgb(114, 112, 112);
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    background-color: #D4B2A7;
+    cursor: pointer;
+}
+
+.nav-bar-ul li:hover {
+    background-color: rgb(228, 153, 153);
+    color: black;
+    transition: all 0.3s linear;
+    text-transform: capitalize;
+    padding-left: 13px;
+}
+
+.nav-bar-profile {
+    width: 100%;
+    height: 170px;
+    background-color: white;
+}
+
+.nav-bar-button img {
+    position: fixed;
+    width: 50px;
+    top: 6px;
+    left: 13px;
+    cursor: pointer;
+    transition: transform .2s;
+    z-index: 1;
+}
+
+.nav-bar-button img:hover {
+    transform: scale(1.10);
+}
+
+.logoutwindow {
+    font-family: monospace;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 200px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.logoutwindow-section {
+    text-align: center;
+    font-size: 35px;
+}
+
+.logoutwindow-section button {
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+}
+
+#logout-yes:hover {
+    background-color: rgb(15, 238, 15);
+    border: 1px solid black;
+    border-radius: 2px;
+
+}
+
+#logout-no:hover {
+    background-color: rgb(243, 32, 32);
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+footer {
+    position: fixed;
+    margin-left: 4px;
+    left: 4px;
+    bottom: 0px;
+    color: rgb(90, 85, 85);
+}
